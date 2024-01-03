@@ -1,8 +1,8 @@
 class Solution {
     // Add Two Numbers (Java improved)
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-        ListNode dummyHead = new ListNode(0);
-        ListNode curr = dummyHead;
+        ListNode Latest = new ListNode(0);
+        ListNode curr = Latest;
         int carry = 0;
         while (l1 != null || l2 != null || carry != 0) {
             int x = (l1 != null) ? l1.val : 0;
@@ -16,6 +16,6 @@ class Solution {
             if (l2 != null)
                 l2 = l2.next;
         }
-        return dummyHead.next;
+        return Latest.next;
     }
 }
