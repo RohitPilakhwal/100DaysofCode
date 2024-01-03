@@ -1,5 +1,4 @@
 class Solution {
-    // Add Two Numbers (Java improved)
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode Latest = new ListNode(0);
         ListNode curr = Latest;
